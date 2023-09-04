@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+.preload{
+    height: 100vh;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+.circle{
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-bottom:5px dashed rgba(33, 161, 184, 0.568);
+    border-left: 3px dashed rgb(85, 212, 221);
+    border-right: 4px dashed rgb(148, 205, 219);
+    animation-name: motion;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+@keyframes motion {
+    from{
+        /* background-color: red; */
+        transform: rotate(0deg);
+    }
+    to{
+    
+        transform: rotate(360deg);
+    }
+}
